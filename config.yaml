@@ -1,0 +1,22 @@
+# Example configuration
+api_key: "YOUR_API_KEY"
+api_secret: "YOUR_API_SECRET"
+testnet: true
+update_interval: 60
+ads:
+  - tag: "#S1"
+    type: SELL
+    fixed_price: 100.0
+    balance: "max"
+    min_amount: 10
+    max_amount: 1000
+    payment_ids: ["123"]
+    remark: "#S1 Sell USDT"
+  - tag: "#B1"
+    type: BUY
+    fixed_price: 90.0
+    quantity: 50
+    min_amount: 10
+    max_amount: 1000
+    payment_ids: ["123"]
+    remark: "#B1 Buy USDT"
