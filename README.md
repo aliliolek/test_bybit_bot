@@ -1,21 +1,18 @@
-# Bybit P2P Trading Bot
+# Simple Bybit P2P Project
 
-This project provides a small Telegram controlled bot to automate basic P2P trading tasks on Bybit.
-The bot reads a `config.yaml` file on startup and periodically updates P2P ads and processes orders.
+This project demonstrates basic usage of the `bybit-p2p` library. It provides a
+small command line helper that lists your active P2P advertisements.
 
-## Features
-- Periodic update loop for SELL and BUY ads.
-- One‑time greeting in new order chats.
-- One‑time automatic mark as paid for BUY orders.
-- Placeholder functions for pricing strategies.
+## Setup
 
-## Usage
 1. Install dependencies
    ```bash
    pip install -r requirements.txt
    ```
-2. Run the bot
+2. Copy `config.yaml` and fill in your API credentials.
+3. Run the tool
    ```bash
-   python -m bybit_bot.bot
+   python -m p2p_bot.main config.yaml
    ```
-Edit `config.yaml` to configure Bybit and Telegram credentials, ad settings and pricing rules before running the bot.
+
+Use the `--side` option to filter BUY (0) or SELL (1) ads.

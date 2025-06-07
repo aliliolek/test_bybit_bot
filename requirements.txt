@@ -1,6 +1,2 @@
-python-telegram-bot>=22.0
-pyyaml
 bybit-p2p
-requests
-requests-toolbelt
-pycryptodome
+PyYAML
